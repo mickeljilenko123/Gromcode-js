@@ -30,7 +30,7 @@ console.log("17 === '17': ", 17 === '17');
 17 === true;
 console.log("17 === true: ", 17 === true);
 '0' === '';
-console.log("0 === '': ", 0 === '');
+console.log("'0' === '': ", 0 === '');
 true === false;
 console.log("true === false: ", true === false);
 true === true;

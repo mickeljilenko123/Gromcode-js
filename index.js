@@ -1,6 +1,6 @@
 let n = 110;
 let sum = 0;
-while (n > 1) {
+while (n > 0) {
     sum += n;
     n--;
 }

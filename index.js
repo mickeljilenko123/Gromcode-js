@@ -1,17 +1,19 @@
-const n = 40;
+let m = 10;
+let n = 20;
 let result = 0;
 
-for (let m = 10; m <= 20; m++) {
+do {
     if (m % 2 === 0 && m % 4 !== 0) {
         result += m;
+        console.log(m);
     } else if (m % 3 === 0) {
         result -= m;
+        console.log(m);
     } else if (m % 4 === 0) {
         result *= m;
+        console.log(m);
     } else if (m % 5 === 0) {
         console.log(m);
     }
-
-}
-
-console.log('Result: ' + result);
+    m++
+} while (m <= n);

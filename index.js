@@ -3,17 +3,17 @@ let n = 20;
 let result = 0;
 
 do {
-    if (m % 2 === 0 && m % 4 !== 0) {
-        result += m;
-        console.log(m);
-    } else if (m % 3 === 0) {
-        result -= m;
-        console.log(m);
-    } else if (m % 4 === 0) {
-        result *= m;
-        console.log(m);
-    } else if (m % 5 === 0) {
-        console.log(m);
+    if (n % 2 === 0 && n % 4 !== 0) {
+        result += n;
+        console.log(n);
+    } else if (n % 3 === 0) {
+        result -= n;
+        console.log(n);
+    } else if (n % 4 === 0) {
+        result *= n;
+        console.log(n);
+    } else if (n % 5 === 0) {
+        console.log(n);
     }
-    m++
-} while (m <= n);
+    n--
+} while (n >= m);

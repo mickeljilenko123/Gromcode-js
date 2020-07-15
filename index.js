@@ -11,8 +11,8 @@ do {
     } else if (a % 4 === 0) {
         result *= a;
     } else if (a % 5 === 0) {
+        result += a;
         console.log(a);
     }
     a++;
-    result = a;
 } while (a <= n);

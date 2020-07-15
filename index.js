@@ -1,7 +1,7 @@
 const m = 10;
 const n = 40;
 let result = 0;
-let a = 10;
+let a = m;
 
 for (a = m; a <= n; a++) {
     if (a % 2 === 0 && a % 4 !== 0) {

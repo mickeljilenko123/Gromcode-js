@@ -12,6 +12,7 @@ for (a = 10; a <= n; a++) {
     }
     if (a % 4 === 0) {
         result *= a;
+
     }
     if (a % 5 === 0) {
         console.log(a);

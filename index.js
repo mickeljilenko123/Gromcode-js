@@ -1,8 +1,13 @@
-const n = 110;
-let m = 0;
-let sum = 0;
-while (m <= n) {
-    sum += m;
-    m += 1;
-}
-console.log('Result: ' + sum);
+const m = 20; //Начальное значение
+const n = 30;
+let a = 20;
+let result = 1;
+
+do {
+    if (a % 2 === 1) {
+        result *= a;
+    }
+    a++; //При каждой итерации мы будем увиличиавть
+} while (a <= n); // n = граничное 
+
+console.log('Result: ' + result);

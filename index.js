@@ -1,13 +1,6 @@
-const m = 20; //Начальное значение
-const n = 30;
-let a = 20;
-let result = 1;
-
-do {
-    if (a % 2 === 1) {
-        result *= a;
+for (let i = 1; i <= 5; i++) {
+    console.log('\n=> ' + i + ' <=\n\n'); //Таблица умножение 5 колонок
+    for (let j = 1; j <= 10; j++) { // Для строк
+        console.log(i + ' * ' + j + ' = ' + i * j);
     }
-    a++; //При каждой итерации мы будем увиличиавть
-} while (a <= n); // n = граничное 
-
-console.log('Result: ' + result);
+}

@@ -1,9 +1,9 @@
 let m = 1;
-let sum = 0;
-const n = 7;
-while (m <= 7) {
+let sum = 1;
+const n = 20;
+while (m < 20) {
+    m += 1;
     sum += String(m);
-    m++;
 
 }
 console.log('Result: ' + sum);

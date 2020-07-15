@@ -1,19 +1,19 @@
 let m = 10;
-let n = 20;
+let n = 40;
 let result = 0;
 
 do {
-    if (n % 2 === 0 && n % 4 !== 0) {
-        result += n;
-        console.log(n);
-    } else if (n % 3 === 0) {
-        result -= n;
-        console.log(n);
-    } else if (n % 4 === 0) {
-        result *= n;
-        console.log(n);
+    if (m % 2 === 0 && m % 4 !== 0) {
+        result += m;
+        console.log(m);
+    } else if (m % 3 === 0) {
+        result -= m;
+        console.log(m);
+    } else if (m % 4 === 0) {
+        result *= m;
+        console.log(m);
     } else if (n % 5 === 0) {
-        console.log(n);
+        console.log(m);
     }
-    n--
-} while (n >= m);
+    m++;
+} while (m <= n);

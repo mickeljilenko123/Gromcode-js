@@ -1,7 +1,7 @@
 const m = 10;
-const n = 45;
-let result = 0;
+const n = 48;
 let a = m;
+let result = 0;
 
 for (a = m; a <= n; a++) {
     if (a % 2 === 0 && a % 4 !== 0) {
@@ -14,5 +14,4 @@ for (a = m; a <= n; a++) {
     if (a % 5 === 0) {
         console.log(a);
     }
-    result = a;
 }

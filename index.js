@@ -1,19 +1,20 @@
-let m = 10;
-let n = 40;
+const m = 10;
+const n = 40;
 let result = 0;
+let a = 10;
 
 do {
-    if (m % 2 === 0 && m % 4 !== 0) {
-        result += m;
-        console.log(m);
-    } else if (m % 3 === 0) {
-        result -= m;
-        console.log(m);
-    } else if (m % 4 === 0) {
-        result *= m;
-        console.log(m);
-    } else if (n % 5 === 0) {
-        console.log(m);
+    if (a % 2 === 0 && a % 4 !== 0) {
+        result += a;
+        console.log(a);
+    } else if (a % 3 === 0) {
+        result -= a;
+        console.log(a);
+    } else if (a % 4 === 0) {
+        result *= a;
+        console.log(a);
+    } else if (a % 5 === 0) {
+        console.log(a);
     }
-    m++;
-} while (m <= n);
+    a++;
+} while (a <= n);

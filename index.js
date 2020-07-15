@@ -6,15 +6,13 @@ let a = 10;
 do {
     if (a % 2 === 0 && a % 4 !== 0) {
         result += a;
-        console.log(a);
     } else if (a % 3 === 0) {
         result -= a;
-        console.log(a);
     } else if (a % 4 === 0) {
         result *= a;
-        console.log(a);
     } else if (a % 5 === 0) {
         console.log(a);
     }
     a++;
+    result = a;
 } while (a <= n);

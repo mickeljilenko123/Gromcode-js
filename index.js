@@ -1,22 +1,15 @@
-const m = 5;
-const n = 35;
 let result = 0;
-for (let a = m; a <= n; a++) {
-    if (a % 5 === 0) {
-        console.log(a);
-        continue;
-    }
-    if (a % 2 === 0 && a % 4 !== 0) {
-        result += a;
-        continue;
-    }
-    if (a % 3 === 0) {
-        result -= a;
-        continue;
-    }
-    if (a % 4 === 0) {
-        result *= a;
-        continue;
-    }
 
+for (let n = 0; n <= 1000; n++) {
+    if (n % 2 === 1) {
+        console.log('Found');
+        continue;
+    }
+    result += n;
+}
+
+if (result * 5 > 5000) {
+    console.log('Bigger');
+} else {
+    console.log("Smaller or equal");
 }

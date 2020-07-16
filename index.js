@@ -1,6 +1,6 @@
-const m = 2;
+let m = 2;
 const n = 50;
-let result = 1;
+let result = 0;
 for (let a = m; a <= n; a++) {
     if (a % 2 === 0 && a % 4 !== 0) {
         result += a;
@@ -9,7 +9,8 @@ for (let a = m; a <= n; a++) {
     } else if (a % 4 === 0) {
         result *= a;
 
-    } else if (a % 5 === 0) {
+    }
+    if (a % 5 === 0) {
         console.log(a);
     }
 

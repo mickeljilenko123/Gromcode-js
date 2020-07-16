@@ -8,7 +8,8 @@ for (let a = m; a <= n; a++) {
         result -= a;
     } else if (a % 4 === 0) {
         result *= a;
-    } else if (a % 5 === 0) {
+    }
+    if (a % 5 == 0) {
         console.log(a);
     }
 

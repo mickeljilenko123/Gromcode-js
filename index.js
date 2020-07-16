@@ -1,5 +1,5 @@
 let m = 2;
-const n = 50;
+let n = 50;
 let result = 0;
 for (let a = m; a <= n; a++) {
     if (a % 2 === 0 && a % 4 !== 0) {

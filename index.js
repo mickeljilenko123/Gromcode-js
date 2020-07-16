@@ -1,18 +1,22 @@
-let m = 5;
-let n = 35;
+const m = 5;
+const n = 35;
 let result = 0;
-for (let i = m; i <= n; i++) {
-    if (i % 2 == 0 && i % 4 != 0) {
-        result = result + i;
+for (let a = m; a <= n; a++) {
+    if (a % 2 === 0 && a % 4 !== 0) {
+        result += a;
+        continue;
     }
-    if (a % 3 == 0) {
-        result = result - i;
+    if (a % 3 === 0) {
+        result -= a;
+        continue;
     }
-    if (a % 4 == 0) {
-        result = result * i;
+    if (a % 4 === 0) {
+        result *= a;
+        continue;
     }
-    if (i % 5 == 0) {
-        console.log(i);
+    if (a % 5 === 0) {
+        console.log(a);
+        continue;
     }
 
 }

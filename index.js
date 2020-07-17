@@ -1,11 +1,10 @@
-let result = 0;
+let summ = 0;
 const getSum = function(m, n) {
     for (let i = m; i <= n; i++) {
         if (i % 2 === 0) {
-            result += i;
-            continue;
+            summ += i;
         }
     }
 }
-let a = getSum(2, 12);
-console.log(a = result);
+getSum(2, 12);
+console.log(summ);

@@ -5,6 +5,7 @@ const getSum = function(m, n) {
             summ += i;
         }
     }
+    return summ;
 }
 getSum(2, 12);
 console.log(summ);

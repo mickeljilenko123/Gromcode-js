@@ -1,9 +1,2 @@
-function getEvenOdd(num) {
-    if (num % 2 === 0) {
-        return "even";
-    }
-    if (num % 2 === 1) {
-        return "odd";
-    }
-}
-console.log(getEvenOdd(2));
+const square = num => num * num
+console.log(square(2));

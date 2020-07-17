@@ -7,5 +7,4 @@ const getSum = function(m, n) {
     }
     return summ;
 }
-getSum(2, 12);
-console.log(summ);
+console.log(getSum(2, 12));

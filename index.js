@@ -3,10 +3,10 @@ let result = 0;
 function getSum(m, n) {
     for (let i = m; i <= n; i++) {
         if (i % 2 === 0) {
+            console.log(i);
             result += i;
-            continue;
         }
     }
 }
-getSum(10, 30);
+getSum(2, 4);
 console.log(result);

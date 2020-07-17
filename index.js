@@ -1,8 +1,4 @@
-let result = 0;
-let bool
-
-for (let n = 0; n <= 1000; n++) {
-    result += n;
-    bool = (result % 1234 === 0 || result % 1234 === 1)
+function sum(a, b) {
+    return a + b;
 }
-console.log(bool);
+console.log(sum(4, 2));

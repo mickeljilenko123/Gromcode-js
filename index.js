@@ -4,5 +4,5 @@
              console.log(m);
          }
      }
+     return m;
  }
- getPrimes(15);

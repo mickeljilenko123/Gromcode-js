@@ -1,11 +1,8 @@
-let sum = 0;
-
-function getSum(m, n) {
-    let sum = 0;
-    for (let i = m; i <= n; i++) {
-        if (i % 2 === 0) {
-            sum += i;
-        }
-    }
-    return sum;
-}
+ function getPrimes(n) {
+     for (let m = 1; m <= n; m++) {
+         if (m % 1 === 0) {
+             console.log(m);
+         }
+     }
+ }
+ getPrimes(15);

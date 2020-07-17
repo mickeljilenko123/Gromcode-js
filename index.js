@@ -1,6 +1,7 @@
 let sum = 0;
 
 function getSum(m, n) {
+    let sum = 0;
     for (let i = m; i <= n; i++) {
         if (i % 2 === 0) {
             sum += i;
@@ -8,5 +9,3 @@ function getSum(m, n) {
     }
     return sum;
 }
-getSum(2, 12);
-console.log(sum);

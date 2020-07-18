@@ -3,8 +3,10 @@ function sum(from, to) {
 }
 
 function compareSums(a, b, c, d) {
-    let result;
-    result = (sum(a, b) || sum(c, d));
-    return result;
+    if (sum(a, b) > sum(c, d)) {
+        return 'true';
+    } else {
+        return 'false';
+    }
 }
 console.log(compareSums(1, 2, 3, 4));

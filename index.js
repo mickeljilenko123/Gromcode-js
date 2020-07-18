@@ -1,8 +1,9 @@
-function getPrimes(n) {
-    nextPrimes: for (let i = 2; i <= n; i++) {
-        for (let j = 2; j < i; j++) {
-            if (i % j === 0) continue nextPrimes;
-        }
-        console.log(i);
+const increaser = function(a, index) {
+    if (a > index) {
+        a += index;
+    } else {
+        return a;
     }
+    return a;
 }
+console.log(increaser(10, 12));

@@ -1,9 +1,10 @@
-const increaser = function(a, index) {
-    if (a > index) {
-        a += index;
-    } else {
-        return a;
-    }
-    return a;
+function sum(from, to) {
+    return from + to;
 }
-console.log(increaser(10, 12));
+
+function compareSums(a, b, c, d) {
+    let result;
+    result = (sum(a, b) || sum(c, d));
+    return result;
+}
+console.log(compareSums(1, 2, 3, 4));

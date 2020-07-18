@@ -1,17 +1,16 @@
 function sum(from, to) {
-    let result = 0;
+    let total = 0;
     for (let i = from; i <= to; i++) {
-        result += i;
+        total += i;
     }
-    return result;
+    return total;
 }
 
 function compareSums(a, b, c, d) {
-
-    if (sum(a, b) < sum(c, d)) {
+    if (sum(a, b) > sum(c, d)) {
         return true;
     } else {
         return false;
     }
 }
-console.log(compareSums(2, 5, 1, 2));
+compareSums(2, 9, 1, 2)

@@ -1,18 +1,16 @@
 function compareSums(a, b, c, d) {
-    if (sum(a, b) > sum(c, d)) {
-        return 'true';
+    function sum1() {
+        return a + b;
+    }
+
+    function sum2() {
+        return c + d;
+    }
+
+    if (sum1() < sum2()) {
+        return true;
     } else {
-        return 'false';
-    };
+        return false;
+    }
 }
 console.log(compareSums(2, 9, 4, 15));
-
-
-
-function sum(from, to) {
-    let result = 0;
-    for (let i = from; i <= to; i++) {
-        result += i;
-    }
-    return result;
-}

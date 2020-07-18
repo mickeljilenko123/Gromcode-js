@@ -1,5 +1,4 @@
 function getPrime(n) {
-    let i;
     nextPrime: for (i = 2; i <= n; i++) {
 
         for (let j = 2; j < i; j++) {
@@ -7,6 +6,4 @@ function getPrime(n) {
         }
         console.log(i);
     }
-    return i;
 }
-console.log(getPrime(10));

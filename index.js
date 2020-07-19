@@ -12,5 +12,4 @@ function getSum(numbers) {
         return sumOfNumbers;
     }
 }
-const sumOfElements = getSum(numbers);
-console.log('Result: ' + sumOfElements);
+console.log(getSum(numbers));

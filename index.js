@@ -1,8 +1,8 @@
-const numbers = [11, 22, 33, 44, 66];
+function run() {
+    var a = 0,
+        b = 1;
 
-function swap(arr) {
-    const [start, ...rest] = arr;
-    return [...rest, start];
+    if (a == b) {
+        return c;
+    }
 }
-
-console.log(swap(numbers));

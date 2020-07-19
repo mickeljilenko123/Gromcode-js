@@ -1,13 +1,10 @@
 function findDivCount(a, b, n) {
-    for (let i = a; i < b; i++) {
+    let count = 0;
+    for (let i = a; i <= b; i++) {
         if (i % n === 0) {
-            while (i < n) {
-                i++;
-            }
+            count++;
         }
-        return i;
-
     }
-
+    return count;
 }
 console.log(findDivCount(2, 9, 3));

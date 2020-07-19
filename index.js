@@ -1,11 +1,16 @@
 const numbers = [11, 22, 33, 44, 66];
+let sumOfNumbers = 0;
 
-function getArrayBounds(arr) {
-    if (!Array.isArray(arr)) {
+function sum(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+        sumOfNumbers += numbers[i];
+    }
+    if (!Array.isArray(numbers)) {
         return null;
     } else {
-        return [arr.length, arr[0], arr[arr.length - 1]];
+
+        return sumOfNumbers;
     }
 }
-const arrayBounds = getArrayBounds(numbers);
-console.log(arrayBounds);
+const sumOfElements = sum(numbers);
+console.log('Result: ' + sumOfElements);

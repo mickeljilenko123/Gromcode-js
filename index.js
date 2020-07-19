@@ -5,11 +5,6 @@ function getSum(numbers) {
     for (let i = 0; i < numbers.length; i++) {
         sumOfNumbers += numbers[i];
     }
-    if (!Array.isArray(numbers)) {
-        return null;
-    } else {
-
-        return sumOfNumbers;
-    }
+    return sumOfNumbers;
 }
 console.log(getSum(numbers));

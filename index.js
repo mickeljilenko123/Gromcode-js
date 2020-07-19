@@ -1,13 +1,11 @@
-const numbers = [11, 22, 33, 44, 66];
-
-function getSum(numbers) {
-    let sumOfNumbers = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        sumOfNumbers += numbers[i];
+function getSpecialNumbers(from, to) {
+    let specialNumbers = [];
+    for (let i = from; i <= to; i++) {
+        if (i % 3 === 0) {
+            specialNumbers.push(i);
+        }
     }
-    if (!Array.isArray(numbers)) {
-        return null;
-    }
-    return sumOfNumbers;
+    return specialNumbers;
 }
-console.log(getSum(numbers));
+const specialNumbers = getSpecialNumbers(10, 30);
+console.log(specialNumbers);

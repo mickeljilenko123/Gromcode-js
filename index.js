@@ -1,7 +1,7 @@
 const numbers = [11, 22, 33, 44, 66];
 let sumOfNumbers = 0;
 
-function sum(numbers) {
+function getSum(numbers) {
     for (let i = 0; i < numbers.length; i++) {
         sumOfNumbers += numbers[i];
     }
@@ -12,5 +12,5 @@ function sum(numbers) {
         return sumOfNumbers;
     }
 }
-const sumOfElements = sum(numbers);
+const sumOfElements = getSum(numbers);
 console.log('Result: ' + sumOfElements);

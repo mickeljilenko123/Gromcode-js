@@ -1,10 +1,11 @@
-function findDivCount(a, b, n) {
-    let count = 0;
-    for (let i = a; i <= b; i++) {
-        if (i % n === 0) {
-            count++;
-        }
+const numbers = [11, 22, 33, 44, 66];
+
+function getArrayBounds(arr) {
+    if (!Array.isArray(arr)) {
+        return null;
+    } else {
+        return [arr.length, arr[0], arr[arr.length - 1]];
     }
-    return count;
 }
-console.log(findDivCount(2, 9, 3));
+const arrayBounds = getArrayBounds(numbers);
+console.log(arrayBounds);
